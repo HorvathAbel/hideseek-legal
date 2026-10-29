@@ -1,13 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HideSeek – real-life hide and seek</title><style>
-:root{color-scheme:light dark;--bg:#F5F2FF;--card:#fff;--fg:#1C1535;--muted:#6F6890;--line:#E3DEF5;--brand:#6D3DF2}
-@media (prefers-color-scheme:dark){:root{--bg:#14102a;--card:#1d1838;--fg:#f3f0ff;--muted:#a9a2c8;--line:#2e2750}}
+:root{color-scheme:light dark;--bg:#F4F4F4;--card:#fff;--fg:#000;--muted:#6B6B6B;--line:#E3E3E3;--brand:#000;--accent:#276EF1}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--card:#141414;--fg:#fff;--muted:#9A9A9A;--line:#2A2A2A;--brand:#fff}.btn{background:#fff!important;color:#000!important}.logo{border-color:#2A2A2A}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 main{max-width:760px;margin:0 auto;padding:28px 20px 80px}
 header{display:flex;align-items:center;gap:10px;margin-bottom:18px}
-header b{font-size:22px;letter-spacing:-.5px}header b span{color:var(--brand)}
-.logo{width:36px;height:36px;border-radius:10px;background:var(--brand);display:grid;place-items:center}
-.logo i{width:18px;height:11px;background:#fff;border-radius:60% 60% 60% 60%/100% 100% 100% 100%;display:block;position:relative}
-.logo i:after{content:"";position:absolute;left:6px;top:2px;width:7px;height:7px;border-radius:50%;background:#4A22C4}
+header b{font-size:22px;letter-spacing:-.5px}header b span{color:var(--accent)}
+.logo{width:36px;height:36px;border-radius:10px;background:#000;border:1px solid var(--line);display:block;position:relative;overflow:hidden}
+.logo i{position:absolute;left:11px;top:7px;width:14px;height:14px;border-radius:50%;background:#fff}
+.logo i:before{content:"";position:absolute;left:-5px;top:11px;width:24px;height:8px;border-radius:2px;background:#fff;border-top:3px solid #000}
+.logo i:after{content:"";position:absolute;left:19px;top:-3px;width:5px;height:5px;border-radius:50%;background:#276EF1}
 nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}nav a{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;text-decoration:none;color:var(--fg);font-weight:600;font-size:14px}
 h1{font-size:32px;line-height:1.15;margin:8px 0 12px;letter-spacing:-.8px}h2{font-size:20px;margin:30px 0 8px}
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card)}
@@ -15,7 +16,7 @@ th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-ali
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:12px 0}
 .card h3{margin:0 0 4px;font-size:17px}.card p{margin:0;color:var(--muted)}
 a{color:var(--brand)}hr{border:0;border-top:1px solid var(--line);margin:44px 0}
-.btn{display:inline-block;background:var(--brand);color:#fff!important;text-decoration:none;font-weight:800;border-radius:16px;padding:16px 26px;font-size:18px}
+.btn{display:inline-block;background:#000;color:#fff!important;text-decoration:none;font-weight:800;border-radius:16px;padding:16px 26px;font-size:18px}
 .code{font-size:56px;font-weight:900;letter-spacing:8px;margin:8px 0}
 footer{margin-top:50px;color:var(--muted);font-size:14px}
 </style></head><body><main><header><div class="logo"><i></i></div><b>Hide<span>Seek</span></b></header><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav><h1>Hide. Seek.</h1><p>HideSeek is real-life hide and seek on your phone. Runners hide inside a shrinking play zone, hunters track them with pings and tag them in person. Team radio, haptic alerts and a shareable result card with your route.</p>
